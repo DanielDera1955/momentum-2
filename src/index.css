@@ -1,0 +1,61 @@
+@import "tailwindcss";
+
+@layer base {
+  html, body {
+    overflow-x: hidden;
+    max-width: 100%;
+  }
+}
+
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  }
+  h1, h2, h3, h4, h5, h6 {
+    font-family: 'Outfit', 'Plus Jakarta Sans', sans-serif;
+  }
+}
+
+/* Dynamic Text Scaling */
+.text-scale-normal {
+  font-size: 100%;
+}
+.text-scale-large {
+  font-size: 112.5%;
+}
+.text-scale-xlarge {
+  font-size: 125%;
+}
+
+/* High Contrast mode enhancements */
+.high-contrast {
+  --tw-border-opacity: 1;
+  color: #000000 !important;
+}
+.high-contrast.dark {
+  color: #ffffff !important;
+}
+.high-contrast button, 
+.high-contrast a,
+.high-contrast [role="button"] {
+  outline: 2px solid currentColor !important;
+  outline-offset: 2px;
+}
+
+/* Scrollbar polish */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.4);
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(100, 116, 139, 0.6);
+}
+
